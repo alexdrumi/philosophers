@@ -43,7 +43,7 @@ static t_bool	initializations_succeeded(t_data *data)
 	return (true);
 }
 
-int	main2(int argc, char *argv[])
+int	main(int argc, char *argv[])
 {	
 	t_data	data;
 
@@ -63,10 +63,4 @@ int	main2(int argc, char *argv[])
 	}
 	destroy_philos(&data);
 	return (0);
-}
-
-int	main(int argc, char *argv[])
-{
-	main2(argc, argv);
-	while (1);
 }

@@ -19,7 +19,7 @@ $(NAME): $(OBJS)
 	@echo "Finished building philo"
 	@echo "You can now run ./philo [number of philosophers] [time to die] [time to eat] [time to sleep] [amount to eat (optional)]"
 
-%.o: %.c	
+%.o: %.c 
 	@printf "Building object files.... %-33.33s\r" $@
 	@$(CC) $(CFLAGS) -c $< -o $@
 
